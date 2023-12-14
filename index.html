@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>堃悟AD Law test</title>
@@ -9,20 +10,88 @@
     h1{ text-align:center;color: #ffffff;} 
     header{ text-align:center; } 
     article p{ text-indent:2em;} 
-    .text-color{color:rgb(141, 230, 235)}
+    .text-color{color:#4e83fd}
     footer{ font-size:12px; text-align:center; } 
+   
+        .accordion {
+            cursor: pointer;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #242899;
+        }
+
+        .panel {
+            padding: 0 20px;
+            display: none;
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
     </style>
 </head>
 <body>
-  
-    <article>
-    <h1>AI广告法测试</h1>
-    <p class="text-color">本次测试为应用-Condition</p>
-    <p class="text-color">点击右下角蓝色闪电开始使用</p>
-    <!-- Your script tag -->
-    <script src="https://www.shengu.xyz/js/iframe.js" id="fastgpt-iframe" data-src="https://www.shengu.xyz/chat/share?shareId=q2bauaji60oyl0jn0qta63lp" data-color="#4e83fd"></script>
-    </article>
-    <!-- You can add more HTML content here if needed -->
-    
+
+<h1>AD Law 测试</h1>
+<p class="text-color">#1：括号内为应用名称，为方便调试用。</p>
+<p class="text-color">#2：“ALL”的知识库和prompt皆为未调整过的。</p>
+<button class="accordion">ALL（Condition）</button>
+<div class="panel">
+    <iframe src="https://www.shengu.xyz/chat/share?shareId=ekudj98u378aa9zzvitit6dn"></iframe>
+</div>
+
+<button class="accordion">绝对化用语-张律（智谱）</button>
+<div class="panel">
+    <iframe src="https://www.shengu.xyz/chat/share?shareId=so8o51vwclq002s7hba02lyh"></iframe>
+</div>
+
+<button class="accordion">绝对化用语-XHY（XHY-绝对化-测试）</button>
+<div class="panel">
+    <iframe src="https://www.shengu.xyz/chat/share?shareId=45ug3qriqkq7ymy0l6uzeqwe"></iframe>
+</div>
+
+<button class="accordion">代言人-张律（代言人单独测试）</button>
+<div class="panel">
+    <iframe src="https://www.shengu.xyz/chat/share?shareId=8wazhhbip079rg8de1arrjvl"></iframe>
+</div>
+
+<button class="accordion">代言人-XHY（XHY-代言人-测试）</button>
+<div class="panel">
+    <iframe src="https://www.shengu.xyz/chat/share?shareId=wslhww28c0jenrnl7eoo2s5q"></iframe>
+</div>
+
+<button class="accordion">党和国家-BJY（bjy—党和国家）</button>
+<div class="panel">
+    <iframe src="https://www.shengu.xyz/chat/share?shareId=idsfjypr6lu723on7eszbi56"></iframe>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
